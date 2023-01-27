@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********************************** General styles **********************/
+
+a {
+    text-decoration: none;
+}
+
+
+/********************************** Header Styles ***********************/
+.Header {
+    /* height: 70px; */
+    width: 100%;
+    background-color: #060605;
+    display: block;
+    position: fixed;
+}
+
+.Header__container {
+    width: 90%;
+    /* height: 100%; */
+    margin: 0 auto;
+}
+
+.Header__logo {
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+
+.Header__logo-img {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.Header__menu {
+    float: left;
+}
+
+.Header__menu-item {
+    display: inline-block;
+    text-align: center;
+}
+
+.Header__menu-item a {
+    padding: 15px;
+    display: block;
+    color: red;
+    position: relative;
+}
+
+.Header__menu-item a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: blue;
+    display: block;
+    margin-top: 2px;
+    transition: 0.5s;
+}
+
+.Header__menu-item a:hover::after {
+    width: 100%;
+}
+
+.Header__menu-item--active::after {
+    width: 100% !important;
+}
