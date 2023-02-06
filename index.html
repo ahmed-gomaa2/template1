@@ -5,14 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>template1</title>
-        <link rel="stylesheet" href="css/all.css">
         <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="stylesheet" href="css/all.css">
     </head>
     <body>
         <header class="Header">
             <div class="Header__container">
                 <div class="Header__logo">
-                    <img src="images/logo.png" alt="" class="Header__logo-img">
+                    <h2>Pitzzawy</h2>
                 </div><!-- /Header-logo -->
                 <div class="Header__menu">
                     <ul class="Header__menu-container">
@@ -28,5 +29,460 @@
                 </div><!-- /Header__menu -->    
             </div> <!-- /Header__container -->
         </header> <!-- /Header -->
-    </body>
+        <main class="Home">
+            <div class="Home__container">
+                <div class="Home__content">
+                    <div class="Home__content-container">
+                        <div class="Home__header">
+                            <h1 class="Home__header-h1">We Are Pizza Restaurant</h1>
+                        </div> <!-- /Home__header -->
+                        <div class="Home__description">
+                            <p>we offer multiple sizes, multiple way, indoor or outdoor pizza orders</p>
+                        </div>
+                        <div class="Home__btns">
+                            <button class="Home__btn">book a table!</button>
+                            <button class="Home__btn Home__more">order online</button>
+                        </div>
+                    </div>
+                </div> <!-- /Home__content -->
+                <div class="Home__hero">
+                </div> <!-- /Home__hero -->
+            </div><!-- /Home__container -->
+            <!-- <div class="Home__overlay"></div> -->
+        </main> <!-- /Home -->
+        <section id="order" class="Order">
+            <div class="Order__container">
+                <div class="Order__header">
+                    <h2 class="Order__header-h2">book a table</h2>
+                </div> <!-- /Order__header -->
+                <div class="Order__content">
+                    <div class="Order__calender">
+                        <div class="Order__opening">
+                            <h3 class="Order__opening-header">opening hours:</h3>
+                            <p class="Order__days">all days of the week</p>
+                            <p class="Order__hours">10:00 AM - 10:00 PM</p>
+                        </div> <!-- /Order__opending -->
+                        <div class="Order__additional">
+                            <h3 class="Order__additional-header">Additional Info:</h3>
+                            <p class="Order__additional-phone"><span>Phone: </span>+20 10085.....</p>
+                            <p class="Order__additional-address"><span>Address: </span>Menufia, El-bajour, ......</p>
+                        </div> <!-- /Order__additional -->
+                    </div> <!-- /Order__calender -->
+                    <div class="Order__form">
+                        <form action="" class="Order__form-form">
+                            <div class="Order__form-element">
+                                <label for="number" class="Order__form-label">Table Size:</label>
+                                <select name="number" id="number" class="Order__select">
+                                    <option value="2" class="Order__form-select--item">2</option>
+                                    <option value="3" class="Order__form-select--item">3</option>
+                                    <option value="4" class="Order__form-select--item">4</option>
+                                    <option value="5" class="Order__form-select--item">5</option>
+                                    <option value="6" class="Order__form-select--item">6</option>
+                                    <option value="7" class="Order__form-select--item">7</option>
+                                    <option value="8" class="Order__form-select--item">8</option>
+                                    <option value="9" class="Order__form-select--item">9</option>
+                                </select>
+                            </div><!-- /Order__form-element -->
+                            <div class="Order__form-element">
+                                <label for="day" class="Order__form-label">Choose A Day:</label>
+                                <input class="Order__input-date" type="date">
+                            </div> <!-- /Order__form-element -->
+                            <div class="Order__form-element">
+                                <label for="number" class="Order__form-label">Choose A Time:</label>
+                                <select name="number" id="number" class="Order__select">
+                                    <option value="2" class="Order__form-select--item">10:00 AM</option>
+                                    <option value="3" class="Order__form-select--item">11:00 AM</option>
+                                    <option value="4" class="Order__form-select--item">12:00 AM</option>
+                                    <option value="5" class="Order__form-select--item">01:00 PM</option>
+                                    <option value="6" class="Order__form-select--item">02:00 PM</option>
+                                    <option value="7" class="Order__form-select--item">03:00 PM</option>
+                                    <option value="8" class="Order__form-select--item">04:00 PM</option>
+                                    <option value="9" class="Order__form-select--item">05:00 PM</option>
+                                    <option value="9" class="Order__form-select--item">06:00 PM</option>
+                                    <option value="9" class="Order__form-select--item">07:00 PM</option>
+                                    <option value="9" class="Order__form-select--item">08:00 PM</option>
+                                    <option value="9" class="Order__form-select--item">09:00 PM</option>
+                                </select>
+                            </div> <!-- /Order__form-element -->
+                            <button class="Order__form-button">order</button>
+                        </form>
+                    </div> <!-- /Order__form -->
+                </div>
+            </div> <!-- /Order__contianer -->
+        </section> <!-- /Order -->
+        <section class="Services">
+            <div class="Services__header">
+                <h2 class="Services__header-h2">services</h2>
+            </div> <!-- /Services__header -->
+            <div class="Services__container">
+                <div class="Services__item Services__item-appetizer">
+                    <div class="Services__item-text">
+                        <div class="Services__item-icon">
+                            <i class="fas fa-utensil-spoon"></i>
+                        </div> <!-- /Services__item-icon -->
+                        <div class="Services__item-header">
+                            <h2>appetizers</h2>
+                        </div> <!-- /Services__item-header -->
+                        <div class="Services__item-desc">
+                            <p>we serve appetizers before the main order.</p>
+                        </div> <!-- /Services__item-desc -->
+                        <a href="#order">order</a>    
+                    </div>
+                    <div class="Services__item-overlay Services__item-overlay1"></div>
+                </div> <!-- /Services__item -->
+                <div class="Services__item Services__item-middle">
+                    <div class="Services__item-text">
+                        <div class="Services__item-icon">
+                            <i class="fas fa-pizza-slice"></i>
+                        </div> <!-- /Services__item-icon -->
+                        <div class="Services__item-header">
+                            <h2>main meal</h2>
+                        </div> <!-- /Services__item-header -->
+                        <div class="Services__item-desc">
+                            <p>we serve the main meal.</p>
+                        </div> <!-- /Services__item-desc -->
+                        <a href="#order">order</a>    
+                    </div>
+                    <div class="Services__item-overlay Services__item-overlay2"></div>
+
+                </div> <!-- /Services__item-middle -->
+                <div class="Services__item">
+                    <div class="Services__item-text">
+                        <div class="Services__item-icon">
+                            <i class="fas fa-ice-cream"></i>
+                        </div> <!-- /Services__item-icon -->
+                        <div class="Services__item-header">
+                            <h2>dessert</h2>
+                        </div> <!-- /Services__item-header -->
+                        <div class="Services__item-desc">
+                            <p>we serve dessert after the main meal.</p>
+                        </div> <!-- /Services__item-desc -->
+                        <a href="#order">order</a>    
+                    </div>
+                    <div class="Services__item-overlay Services__item-overlay3"></div>
+                </div><!-- /Services__item -->
+            </div> <!-- Sizes__container -->
+        </section> <!-- /Sizes -->
+        <section class="Meals">
+            <div class="Meals__header">
+                <h2 class="Meals__header-h2">Restaurant Meals</h2>
+            </div> <!-- /Meals__header -->
+            <div class="Meals__container">
+                <div class="Meals__content">
+                    <div class="Meals__item">
+                        <img src="images/small.jpg" alt="">
+                        <div class="Meals__item-content">
+                            <div class="Meals__item-content--container">
+                                <div class="Meals__item-header">
+                                    <h2 class="Meals__item-header-h2">mini pizza</h2>
+                                </div> <!-- /Meals__item-header -->
+                                <div class="Meals__item-desc">
+                                    <p>good for 1 person</p>
+                                </div>
+                                <form action="" class="Meals__item-content--form">
+                                    <input value="1" max="10" min="1" type="number" class="Meals__item-input">
+                                    <button>order</button>
+                                </form>    
+                            </div> <!-- /Meals__item-content--container -->
+                        </div><!-- /Meals__item-content -->
+                    </div> <!-- /Meals__item -->
+                    <div class="Meals__item Meals__item-middle">
+                        <img src="images/medium.jpg" alt="">
+                        <div class="Meals__item-content">
+                            <div class="Meals__item-content--container">
+                                <div class="Meals__item-header">
+                                    <h2 class="Meals__item-header-h2">medium pizza</h2>
+                                </div> <!-- /Meals__item-header -->
+                                <div class="Meals__item-desc">
+                                    <p>good for 2 person</p>
+                                </div>
+                                <form action="" class="Meals__item-content--form">
+                                    <input value="1" max="10" min="1" type="number" class="Meals__item-input">
+                                    <button>order</button>
+                                </form>    
+                            </div> <!-- /Meals__item-content--container -->
+                        </div><!-- /Meals__item-content -->
+
+                    </div> <!-- /Meals__item -->
+                    <div class="Meals__item">
+                        <img src="images/large.jpg" alt="">
+                        <div class="Meals__item-content">
+                            <div class="Meals__item-content--container">
+                                <div class="Meals__item-header">
+                                    <h2 class="Meals__item-header-h2">large pizza</h2>
+                                </div> <!-- /Meals__item-header -->
+                                <div class="Meals__item-desc">
+                                    <p>good for 4 person</p>
+                                </div>
+                                <form action="" class="Meals__item-content--form">
+                                    <input value="1" max="10" min="1" type="number" class="Meals__item-input">
+                                    <button>order</button>
+                                </form>    
+                            </div> <!-- /Meals__item-content--container -->
+                        </div><!-- /Meals__item-content -->
+
+                    </div> <!-- /Meals__item -->
+                    <div class="Meals__item">
+                        <img src="images/extra-large.jpg" alt="">
+                        <div class="Meals__item-content">
+                            <div class="Meals__item-content--container">
+                                <div class="Meals__item-header">
+                                    <h2 class="Meals__item-header-h2">extra-large cake</h2>
+                                </div> <!-- /Meals__item-header -->
+                                <div class="Meals__item-desc">
+                                    <p>good for 8 person</p>
+                                </div>
+                                <form action="" class="Meals__item-content--form">
+                                    <input value="1" max="10" min="1" type="number" class="Meals__item-input">
+                                    <button>order</button>
+                                </form>    
+                            </div> <!-- /Meals__item-content--container -->
+                        </div><!-- /Meals__item-content -->
+
+                    </div> <!-- /Meals__item -->
+                    <div class="Meals__item Meals__item-middle">
+                        <img src="images/cake.jpg" alt="">
+                        <div class="Meals__item-content">
+                            <div class="Meals__item-content--container">
+                                <div class="Meals__item-header">
+                                    <h2 class="Meals__item-header-h2">checolate cake</h2>
+                                </div> <!-- /Meals__item-header -->
+                                <div class="Meals__item-desc">
+                                    <p>good for 1 person</p>
+                                </div>
+                                <form action="" class="Meals__item-content--form">
+                                    <input value="1" max="10" min="1" type="number" class="Meals__item-input">
+                                    <button>order</button>
+                                </form>    
+                            </div> <!-- /Meals__item-content--container -->
+                        </div><!-- /Meals__item-content -->
+
+                    </div> <!-- /Meals__item -->
+                    <div class="Meals__item">
+                        <img src="images/ice-cream.jpg" alt="">
+                        <div class="Meals__item-content">
+                            <div class="Meals__item-content--container">
+                                <div class="Meals__item-header">
+                                    <h2 class="Meals__item-header-h2">ice cream</h2>
+                                </div> <!-- /Meals__item-header -->
+                                <div class="Meals__item-desc">
+                                    <p>good for 1 person</p>
+                                </div>
+                                <form action="" class="Meals__item-content--form">
+                                    <input value="1" max="10" min="1" type="number" class="Meals__item-input">
+                                    <button>order</button>
+                                </form>    
+                            </div> <!-- /Meals__item-content--container -->
+                        </div><!-- /Meals__item-content -->
+
+                    </div> <!-- /Meals__item -->    
+                </div> <!-- /Meals__content -->
+            </div> <!-- /Meals__container -->
+        </section> <!-- /Meals -->
+        <section class="Why">
+            <div class="Why__header">
+                <h2 class="Why__header-h2">why us</h2>
+            </div> <!-- /Why__header -->
+            <div class="Why__content">
+                <div class="Why__content-hero">
+                    <img src="images/why.jpg" alt="">
+                </div> <!-- /Why__content-hero -->
+                <div class="Why__content-desc">
+                    <div class="Why__content-desc--container">
+                        <h2 class="Why__desc-header"><i class="fas fa-question-circle"></i>why come to us</h2>
+                        <div class="Why__desc-content">
+                            <p class="Why__desc-text"><i class="fas fa-arrow-right"></i>here's why you can rely on us on making your pizza</p>
+                            <ul class="Why__reasons">
+                                <li class="Why__reason"><i class="fas fa-check-circle"></i>We have the best chefs.</li>
+                                <li class="Why__reason"><i class="fas fa-check-circle"></i>We have delivery service.</li>
+                                <li class="Why__reason"><i class="fas fa-check-circle"></i>We have two hot lines.</li>
+                                <li class="Why__reason"><i class="fas fa-check-circle"></i>We have best reviews.</li>
+                            </ul> <!-- /Why__reasons -->    
+                        </div> <!-- /Why__desc-content -->    
+                    </div> <!-- /Why__content-desc-container -->
+                </div> <!-- /Why__content-desc -->                
+            </div><!-- /Why__content -->
+        </section> <!-- /Why -->
+        <section class="Numbers">
+            <div class="Numbers__container">
+                <div class="Numbers__item">
+                    <div class="Numbers__item-container">
+                        <div class="Numbers__item-icon">
+                            <i class="fas fa-users"></i>
+                        </div> <!-- /Numbers__item-icon -->
+                        <div class="Numbers__item-number"><p>300K</p></div> <!-- /Numbers__item-number -->
+                        <div class="Number__item-desc">happy clients</div> <!-- /Numbers__item-desc -->
+                    </div><!-- /Numbers__item-container -->
+                </div> <!-- /Numbers__item -->
+                <div class="Numbers__item">
+                    <div class="Numbers__item-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div> <!-- /Numbers__item-icon -->
+                    <div class="Numbers__item-number"><p>15</p></div> <!-- /Numbers__item-number -->
+                    <div class="Number__item-desc">awards</div> <!-- /Numbers__item-desc -->
+
+                </div><!-- /Numbers__item -->
+                <div class="Numbers__item">
+                    <div class="Numbers__item-icon">
+                        <i class="fas fa-mug-hot"></i>
+                    </div> <!-- /Numbers__item-icon -->
+                    <div class="Numbers__item-number"><p>200K</p></div> <!-- /Numbers__item-number -->
+                    <div class="Number__item-desc">cooffee cup</div> <!-- /Numbers__item-desc -->
+
+                </div><!-- /Numbers__item -->
+                <div class="Numbers__item">
+                    <div class="Numbers__item-icon">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div> <!-- /Numbers__item-icon -->
+                    <div class="Numbers__item-number"><p>10M</p></div> <!-- /Numbers__item-number -->
+                    <div class="Number__item-desc">order completed</div> <!-- /Numbers__item-desc -->
+
+                </div><!-- /Numbers__item -->
+            </div> <!-- /Numbers__container -->
+            <div class="Numbers__overlay"></div>
+        </section> <!-- /Numbers -->
+        <section class="Pricing">
+            <div class="Pricing__header">
+                <h2>pricing table<span class="Pricing__underline"></span></h2>
+            </div> <!-- Pricing__header -->
+            <div class="Pricing__options">
+                <div class="Pricing__option Pricing__basic">
+                    <div class="Pricing__option-container">
+                        <h3 class="Pricing__option-header">mini pizza</h3>
+                        <h2 class="Pricing__option-price">$10<sub>/unit</sub></h2>
+                        <p class="Pricing__option-description">The perfect order for 1 person.</p>
+                        <hr>
+                        <div class="Pricing__option-features">
+                            <p class="Pricing__option-feature"><i class="fas fa-check"></i><span>1 coca</span></p>
+                            <p class="Pricing__option-feature"><i class="fas fa-check"></i><span>1 water bottle</span></p>
+                            <p class="Pricing__option-feature"><i class="fas fa-check"></i><span>1 cup cake</span></p>
+                        </div>
+                        <button class="Pricing__getstarted">order</button>    
+                    </div>
+                    <div class="Pricing__overlay">
+                        <img src="images/small.jpg" alt="">
+                        <div class="Pricing__overlay-background"></div>
+                    </div> <!-- /Pricing__overlay -->
+                    <div class="Pricing__sideimage">
+                        <img src="images/small.jpg" alt="">
+                    </div> <!-- /Pricing__sideimage -->
+                </div> <!-- Pricing__basic -->
+                <div class="Pricing__option Pricing__pro">
+                    <div class="Pricing__option-container">
+                        <h3 class="Pricing__option-header">medium pizza</h3>
+                        <h2 class="Pricing__option-price">$25<sub>/unit</sub></h2>
+                        <p class="Pricing__option-description">The perfect order for two persons.</p>
+                        <hr>
+                        <div class="Pricing__option-features">
+                            <p class="Pricing__option-feature"><i class="fas fa-check"></i><span>2 coca.</span></p>
+                            <p class="Pricing__option-feature"><i class="fas fa-check"></i><span>large water bottle.</span></p>
+                            <p class="Pricing__option-feature"><i class="fas fa-check"></i><span>2 cup cake.</span></p>
+                        </div>
+                        <button class="Pricing__getstarted">order</button>    
+                    </div> <!-- /Pricing__option-container -->
+                    <p class="Pricing__pupular">popular</p>
+                    <div class="Pricing__overlay">
+                        <img src="images/medium.jpg" alt="">
+                        <div class="Pricing__overlay-background"></div>
+                    </div> <!-- /Pricing__overlay -->
+                    <div class="Pricing__sideimage">
+                        <img src="images/medium.jpg" alt="">
+                    </div> <!-- /Pricing__sideimage -->
+                </div> <!-- Pricing__basic -->
+                <div class="Pricing__option Pricing__startup">
+                    <div class="Pricing__option-container">
+                        <h3 class="Pricing__option-header">large pizza</h3>
+                        <h2 class="Pricing__option-price">$40<sub>/unit</sub></h2>
+                        <p class="Pricing__option-description">The perfect order for 8 users.</p>
+                        <hr>
+                        <div class="Pricing__option-features">
+                            <p class="Pricing__option-feature"><i class="fas fa-check"></i><span>4 coca.</span></p>
+                            <p class="Pricing__option-feature"><i class="fas fa-check"></i><span>2 large water bottle.</span></p>
+                            <p class="Pricing__option-feature"><i class="fas fa-check"></i><span>2 large cake.</span></p>
+                        </div>
+                        <button class="Pricing__getstarted">order</button>    
+                    </div> <!-- Pricing__option-container -->
+                    <div class="Pricing__overlay">
+                        <img src="images/large.jpg" alt="">
+                        <div class="Pricing__overlay-background"></div>
+                    </div> <!-- /Pricing__overlay -->
+                    <div class="Pricing__sideimage">
+                        <img src="images/large.jpg" alt="">
+                    </div>
+                </div> <!-- Pricing__startup -->
+                <div class="Pricing__clearfix"></div>
+            </div><!-- Pricing__options -->
+        </section> <!-- Pricing -->
+        <section class="Team">
+            <div class="Team__header">
+                <h2>our team</h2>
+            </div>
+            <div class="Team__container">
+                <div class="Team__item">
+                    <div class="Team__item-hero">
+                        <img src="images/chef.jpg" alt="">
+                        <div class="Team__item-links">
+                            <a href="" class="Team__item-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="Team__item-link"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="Team__item-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div> <!-- /Team__item-links -->
+                        <div class="Team__item-link--overlay"></div>
+                    </div> <!-- /Team__item-hero -->
+                    <div class="Team__item-header">
+                        <h2>chef</h2>
+                    </div> <!-- /Team__item-header -->
+                </div><!-- /Team__item -->
+                <div class="Team__item Team__middle">
+                    <div class="Team__item-hero">
+                        <img src="images/delivery.jpg" alt="">
+                        <div class="Team__item-links">
+                            <a href="" class="Team__item-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="Team__item-link"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="Team__item-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div> <!-- /Team__item-links -->
+                        <div class="Team__item-link--overlay"></div>
+                    </div> <!-- /Team__item-hero -->
+                    <div class="Team__item-header">
+                        <h2>delivery agency</h2>
+                    </div> <!-- /Team__item-header -->
+                </div><!-- /Team__item -->
+                <div class="Team__item">
+                    <div class="Team__item-hero">
+                        <img src="images/services.jpg" alt="">
+                        <div class="Team__item-links">
+                            <a href="" class="Team__item-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="Team__item-link"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="Team__item-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div> <!-- /Team__item-links -->
+                        <div class="Team__item-link--overlay"></div>
+
+                    </div> <!-- /Team__item-hero -->
+                    <div class="Team__item-header">
+                        <h2>customer services</h2>
+                    </div> <!-- /Team__item-header -->
+                </div><!-- /Team__item -->
+            </div>
+        </section> <!-- /Team -->
+        <footer class="Footer">
+            <div class="Footer__contianer">
+                <div class="Footer__hero">
+                    <img src="images/footer.jpg" alt="">
+                </div> <!-- /Footer__hero -->
+                <div class="Footer__links">
+                    <a href="" class="Footer__link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="Footer__link"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="Footer__link"><i class="fab fa-youtube"></i></a>
+                    <a href="" class="Footer__link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="" class="Footer__link"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="Footer__link"><i class="fab fa-google-plus-g"></i></a>
+                </div> <!-- /Footer__links -->
+                <div class="Footer__copy">
+                    <p>copyright © . all rights reserved by ahmed gomaa</p>
+                </div> <!-- /Footer__copy -->
+            </div> <!-- /Footer__container -->
+        </footer> <!-- /Footer -->
+        <script type='text/javascript'>
+            document.createElement('section');
+        </script>
+    </bod0y>
 </html>

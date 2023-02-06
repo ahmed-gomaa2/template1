@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-shadow: rgb(0 0 0 / 35%) 0px 2px 12px 2px inset;
 }
 
 /********************************** General styles **********************/
@@ -10,36 +20,44 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* a {text-decoration : none} */
+
 
 /********************************** Header Styles ***********************/
 .Header {
-    /* height: 70px; */
     width: 100%;
-    background-color: #060605;
-    display: block;
+    background-color: #E4EDDB;
     position: fixed;
+    z-index: 100;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 35%) 0px 2px 12px 2px;
 }
 
 .Header__container {
-    width: 90%;
-    /* height: 100%; */
     margin: 0 auto;
+    position: relative;
+    padding: 0 10px;
 }
 
 .Header__logo {
     height: 100%;
     width: 30%;
     float: left;
-}
-
-.Header__logo-img {
-    width: 50px;
-    height: 50px;
+    padding: 15px 0;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
     
 }
 
 .Header__menu {
-    float: left;
+    float: right;
+    margin-left: auto;
+    display: block;
+    list-style-type: none;
 }
 
 .Header__menu-item {
@@ -50,15 +68,16 @@ a {
 .Header__menu-item a {
     padding: 15px;
     display: block;
-    color: red;
+    color: black;
     position: relative;
+    text-transform: uppercase;
 }
 
 .Header__menu-item a::after {
     content: '';
     width: 0;
     height: 3px;
-    background-color: blue;
+    background-color: black;
     display: block;
     margin-top: 2px;
     transition: 0.5s;
@@ -70,4 +89,1139 @@ a {
 
 .Header__menu-item--active::after {
     width: 100% !important;
+}
+
+
+/************************************* Home section styles **********************************/
+
+.Home {
+    /* width: 100vw; */
+    height: 100vh;
+    background-color: transparent;
+    /* padding-top: 100px; */
+    position: relative;
+}
+
+.Home__container {
+    width: 100%;
+    height: 100%;
+}
+
+.Home__content {
+    /* position: absolute; */
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: center;
+    background-color: #301818;
+    position: relative;
+}
+
+.Home__content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.Home__hero {
+    width:50% ;
+    float: right;
+    height: 100%;
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    z-index: -10;
+    background: url(../images/pizza.jpg) no-repeat fixed;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+
+}
+
+
+.Home__header-h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.Home__description {
+    font-size: 17px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.Home__btn {
+    padding: 10px 15px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.Home__more {
+    background-color: #307672;
+    color: white;
+}
+
+.Home__btn:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+.Home__more:hover {
+    background-color:  #355352;
+    color: white;
+}
+
+
+/************************************************ Order a table section styles *************************************/
+
+.Order {
+    width: 100%;
+    /* height: 100vh; */
+    background: #F7F9F8;
+    padding-top: 100px;
+}
+
+.Order__container {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.Order__header {
+    text-align: center;
+}
+
+.Order__header-h2 {
+    font-size: 40px;
+    font-weight: 400;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.Order__header-h2::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Order__content {
+    width: 80%;
+    padding: 100px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.Order__calender {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding-left: 100px;
+}
+
+.Order__opening {
+    margin-bottom: 30px;
+}
+
+.Order__opening-header {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.Order__days {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.Order__hours {
+    margin-left: 20px;
+}
+
+
+
+.Order__additional span {
+    font-weight: 900;
+}
+
+.Order__additional-header {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.Order__additional-phone {
+    margin-left: 20px;
+}
+
+.Order__additional-address {
+    margin-left: 20px;
+}
+
+.Order__form {
+    width: 50%;
+    height: 100%;
+    float: right;
+    transform: scale(1.3);
+}
+
+.Order__form-form {
+    width: 60%;
+    background-color: #EBEBEB;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 40px 50px rgb(0 0 0 / 10%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.Order__form-element {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Order__form-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.Order__select {
+    width: 100%;
+    height: 30px;
+}
+
+.Order__input-date {
+    width: 100%;
+    height: 30px;
+}
+
+.Order__form-button {
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #307672;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.Order__form-button:hover {
+    background-color: #355352;
+}
+
+
+/*********************************services styles ****************************/
+
+.Services {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #ebeaea;
+    padding-top: 70px;
+    position: relative;
+}
+
+.Services__header {
+    text-align: center;
+}
+
+.Services__header-h2 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.Services__header-h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+}
+
+.Services__container {
+    overflow: auto;
+    width: 80%;
+    height: auto;
+    background-color: transparent;
+    margin: 0 auto;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    padding: 120px 0;
+}
+
+.Services__item {
+    width: 30%;
+    height: 300px;
+    background-color: unset;
+    float: left;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.Services__item-text {
+    /* z-index: 10; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Services__item-overlay {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: 0.3s;
+    display: block;
+    /* z-index: -1; */
+}
+
+.Services__item-overlay1 {
+    background: url(../images/appetizers.jpg) no-repeat;
+    background-size: cover;
+}
+
+.Services__item-overlay2 {
+    background: url(../images/pizza1.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.Services__item-overlay3 {
+    background: url(../images/dessert.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.Services__item:hover .Services__item-overlay {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.Services__item-overlay::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+    transition: all ease-in-out 0.3s;
+}
+
+
+.Services__item-middle {
+    margin: 0 4.5%;
+}
+
+.Services__item-icon {
+    margin-bottom: 20px;
+}
+
+.Services__item-icon i {
+    font-size: 40px;
+    color: rgb(102, 102, 255);
+}
+
+.Services__item-header {
+    margin-bottom: 20px;
+}
+
+.Services__item-header h2 {
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.Services__item:hover .Services__item-header h2 {
+    color: white;
+}
+
+.Services__item-desc p {
+    font-size: 17px;
+    transition: all ease-in-out 0.3s;
+}
+
+.Services__item:hover .Services__item-desc {
+    color: white;
+}
+
+.Services__item a {
+    width: 50%;
+    padding: 7px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: #307672;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.Services__item a:hover {
+    background-color: #355352;
+}
+
+
+/************************************ Meals section styles *********************************/
+
+.Meals {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #F7F9F8;
+    padding-top: 70px;
+    position: relative;
+
+}
+
+.Meals__header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Meals__header-h2 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.Meals__header-h2::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+}
+
+.Meals__container {
+    overflow: auto;
+    width: 80%;
+    /* height: 100%; */
+    background-color: transparent;
+    margin: 20px auto;
+    position: relative;
+}
+
+.Meals__content {
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.Meals__item {
+    width: 30%;
+    height: 250px;
+    background-color: blue;
+    float: left;
+    margin-bottom: 4%;
+    position: relative;
+}
+
+.Meals__item-middle {
+    margin: 0 5%;
+}
+
+.Meals__item img {
+    width: 100%;
+    height: 100%;
+}
+
+.Meals__item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.Meals__item:hover .Meals__item-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Meals__item-content--container {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Meals__item-header {
+    text-align: center;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+}
+
+.Meals__item-content:hover .Meals__item-header {
+    opacity: 1;
+    top: 0;
+    transition: opacity 0.7s, top 0.7s;
+}
+
+.Meals__item-header-h2 {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.Meals__item-desc {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    opacity: 0;
+    position: relative;
+    top: 15px;
+    
+}
+
+.Meals__item-content:hover .Meals__item-desc {
+    opacity: 1;
+    top: 0;
+    transition: opacity 0.7s, top 0.7s;
+    transition-delay: 0.3s;
+}
+
+.Meals__item-content--form {
+    text-align: center;
+    opacity: 0;
+    position: relative;
+    top: 15px;
+}
+
+.Meals__item-content:hover .Meals__item-content--form {
+    top: 0;
+    opacity: 1;
+    transition: top ease-in-out 0.7s, opacity 0.7s;
+    transition-delay: 0.4s;
+}
+
+.Meals__item-content--form input {
+    width: 50px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+}
+
+.Meals__item-content--form button {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background-color: #307672;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+.Meals__item-content--form button:hover {
+    background-color: #355352;
+}
+
+
+/********************************* Why section styles ************************/
+
+.Why {
+    /* height: 100vh; */
+    width: 100%;
+    background: rgb(238, 238, 238);
+    padding-top: 60px;
+}
+
+.Why__header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Why__header-h2 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.Why__header-h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Why__content {
+    width: 80%;
+    height: calc(100% - 100px);
+    background-color: transparent;
+    margin: 0 auto;
+    overflow: auto;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.Why__content-hero {
+    height: 500px;
+    width: 35%;
+    background-color: red;
+    float: left;
+    border-radius: 10px;
+    position: relative;
+    left: 15%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.Why__content-hero img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.Why__content-desc {
+    height: 50%;
+    width: 50%;
+    background-color: rgb(238, 238, 238);
+    float: right;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    transition: all ease-in-out 0.3s;
+}
+
+.Why__content-desc:hover {
+    transform: translate(5px, -55%);
+    box-shadow: -30px 40px 40px rgba(0, 0, 0, 0.7);
+}
+
+.Why__desc-header {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.Why__desc-header i {
+    margin-right: 10px;
+    color: blue;
+}
+
+.Why__desc-content {
+    margin-left: 50px;
+}
+
+.Why__desc-text {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+
+.Why__desc-text i {
+    margin-right: 10px;
+}
+
+.Why__reasons {
+    margin-left: 25px;
+    list-style: none;
+}
+
+.Why__reason {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.Why__reason i {
+    margin-right: 7px;
+    color: green;
+    font-size: 17px;
+}
+
+/******************************************** Numbers section styles *********************************/
+
+.Numbers {
+    height: 300px;
+    width: 100%;
+    background-image: url(../images/numbers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.Numbers__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.Numbers__container {
+    overflow: auto;
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.Numbers__item {
+    width: 25%;
+    padding: 20px;
+    float: left;
+    text-align: center;  
+}
+
+.Numbers__item * {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 3px;
+}
+
+/*********************************** Pricing section styles **************************/
+
+.Pricing {
+    width: 100%;
+    height: 100vh;
+    background-color: #F8FAFC;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+
+.Pricing__header {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.Pricing__underline {
+    width: 60px;
+    height: 4px;
+    background: #3F69D9;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Pricing__options {
+    width: 65.4%;
+    margin-top: 50px;
+    padding-top: 50px;
+    display: block;
+    margin: 50px auto;
+}
+
+.Pricing__option {
+    float: left;
+    width: 330px;
+    /* height: 400px; */
+    background-color: #fefefe;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .7);
+    overflow: hidden;
+    transition: 0.4s;
+    position: relative;
+    z-index: 0;
+}
+
+.Pricing__option:hover {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    transform: scale(1.05);
+}
+
+.Pricing__option-container {
+    position: relative;
+    z-index: 1;
+}
+
+.Pricing__option-header {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.Pricing__option-price {
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.Pricing__pro .Pricing__option-price {
+    color: white !important;
+}
+
+.Pricing__option-price sub {
+    margin-left: 2px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+hr {
+    border-color: lightgray;
+    margin-bottom: 20px;
+}
+
+.Pricing__option-description {
+    margin-bottom: 20px;
+}
+
+.Pricing__pro {
+    background-color: #1E2338;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    z-index: 1;
+}
+
+
+.Pricing__pro:hover  {
+    transform: scale(1.15);
+}
+
+.Pricing__pro * {
+    color: rgb(247, 242, 242);
+}
+
+.Pricing__pro .Pricing__option-header {
+    color: rgb(65, 65, 237);;
+}
+
+.Pricing__option-feature {
+    margin-bottom: 7px;
+}
+
+.Pricing__option-feature i {
+    margin-right: 5px;
+    color: rgb(15, 233, 15);
+    font-size: 13px;
+}
+
+.Pricing__getstarted {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #1E2338;
+    color: white;
+    border: none;
+    display: inline-block;
+    margin: auto;
+    border-radius: 2px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 17px;
+    cursor: pointer;
+    outline: 1px solid #1E2338;
+    transition: all ease-in-out 0.2s;
+}
+
+.Pricing__getstarted:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.Pricing__pro .Pricing__getstarted {
+    background-color: #707EEF;
+    color: white;
+    outline: 1px solid #707EEF;
+}
+
+.Pricing__pupular {
+    position: absolute;
+    top: 25px;
+    right: -70px;
+    padding: 0px 15px;
+    background: #58CE9E;
+    width: 200px;
+    text-align: center;
+    transform: rotate(45deg);
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    z-index: 2;
+}
+
+.Pricing__option:hover .Pricing__getstarted {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 1);
+}
+
+.Pricing__clearfix {
+    clear: both;
+}
+
+.Pricing__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.Pricing__option:hover .Pricing__overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.Pricing__option:hover {
+    color: white;
+    border: none;
+}
+
+.Pricing__overlay img {
+    width: 100%;
+    height: 100%;
+}
+
+.Pricing__overlay-background {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Pricing__sideimage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Pricing__option:hover .Pricing__sideimage {
+    opacity: 0;
+}
+
+.Pricing__sideimage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+/********************************************* Team section styles ************************/
+
+.Team {
+    width: 100%;
+    padding: 70px 0;
+    background-color: transparent;
+}
+
+.Team__header {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.Team__header h2 {
+    font-weight: 400;
+    position: relative;
+}
+
+.Team__header h2::after {
+    content: '';
+    height: 3px;
+    width: 60px;
+    background-color: black;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Team__container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+    overflow: auto;
+}
+
+.Team__item {
+    width: 30%;
+    /* height: 300px; */
+    background: transparent;
+    padding: 20px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.Team__middle {
+    margin: 0 5%;
+}
+
+.Team__item-hero {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.Team__item-hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.Team__item-header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Team__item-header h2 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.Team__item-links {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: blue;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.Team__item-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
+
+.Team__item:hover .Team__item-links {
+    opacity: 1;
+}
+
+.Team__item-link i {
+    line-height: 40px;
+}
+
+.Team__item-link--overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.Team__item:hover .Team__item-link--overlay {
+    opacity: 1;
+}
+
+/********************************** Footer section styles ***********************/
+
+.Footer {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: rgb(246, 246, 246);
+}
+
+.Footer__hero {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    transform: rotateX(45deg);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
+}
+
+.Footer__hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.Footer__links {
+    margin-bottom: 30px;
+}
+
+.Footer__link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: blue;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.Footer__link:hover {
+    background-color: rgb(50, 50, 158);
+}
+
+.Footer__link i {
+    line-height: 50px;
+    color: white;
+    /* font-size: 50px; */
+
+}
+
+.Footer__copy {
+    text-transform: uppercase;
 }
